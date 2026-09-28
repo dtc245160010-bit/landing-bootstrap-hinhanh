@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Landing Page Bootstrap</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+
+    <style>
+      .hero {
+        min-height: 500px;
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+          url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=80");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .feature-icon {
+        font-size: 45px;
+      }
+
+      .about-image {
+        height: 350px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#"> MyBrand </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#"> Trang chủ </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#about"> Giới thiệu </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#features"> Tính năng </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Banner / Hero -->
+    <section class="hero text-white text-center">
+      <div class="container">
+        <h1 class="display-3 fw-bold">Giải pháp hiện đại cho doanh nghiệp</h1>
+
+        <p class="lead my-4">
+          Cung cấp những giải pháp công nghệ chuyên nghiệp, hiệu quả và dễ sử
+          dụng.
+        </p>
+
+        <a href="#about" class="btn btn-primary btn-lg"> Khám phá ngay </a>
+      </div>
+    </section>
+
+    <!-- Giới thiệu -->
+    <section id="about" class="container py-5">
+      <div class="row align-items-center g-4">
+        <!-- Hình ảnh -->
+        <div class="col-12 col-md-6">
+          <img
+            src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80"
+            class="img-fluid rounded shadow about-image"
+            alt="Đội ngũ làm việc"
+          />
+        </div>
+
+        <!-- Nội dung -->
+        <div class="col-12 col-md-6">
+          <h2 class="fw-bold mb-3">Về sản phẩm của chúng tôi</h2>
+
+          <p>
+            Chúng tôi cung cấp các giải pháp công nghệ giúp doanh nghiệp quản lý
+            công việc hiệu quả và nâng cao năng suất.
+          </p>
+
+          <p>
+            Với giao diện hiện đại, dễ sử dụng và khả năng hoạt động tốt trên
+            nhiều thiết bị, sản phẩm phù hợp với nhiều nhu cầu khác nhau.
+          </p>
+
+          <a href="#features" class="btn btn-primary"> Xem tính năng </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tính năng -->
+    <section id="features" class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5">Tính năng nổi bật</h2>
+
+        <div class="row g-4">
+          <!-- Tính năng 1 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="feature-icon mb-3">🚀</div>
+
+                <h4>Nhanh chóng</h4>
+
+                <p class="text-muted">
+                  Tối ưu tốc độ và giúp bạn hoàn thành công việc nhanh chóng.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tính năng 2 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="feature-icon mb-3">🔒</div>
+
+                <h4>Bảo mật</h4>
+
+                <p class="text-muted">
+                  Thông tin và dữ liệu của bạn luôn được bảo vệ an toàn.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tính năng 3 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="feature-icon mb-3">📱</div>
+
+                <h4>Responsive</h4>
+
+                <p class="text-muted">
+                  Hiển thị đẹp trên máy tính, máy tính bảng và điện thoại.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tính năng 4 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <div class="card-body p-4">
+                <div class="feature-icon mb-3">⭐</div>
+
+                <h4>Dễ sử dụng</h4>
+
+                <p class="text-muted">
+                  Giao diện đơn giản, trực quan và dễ dàng thao tác.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-primary text-white text-center py-5">
+      <div class="container">
+        <h2 class="fw-bold">Sẵn sàng bắt đầu?</h2>
+
+        <p class="lead my-3">Hãy đăng ký ngay để trải nghiệm sản phẩm.</p>
+
+        <a href="#" class="btn btn-light btn-lg"> Đăng ký ngay </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+      <div class="container">
+        <p class="mb-0">&copy; 2026 MyBrand. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
